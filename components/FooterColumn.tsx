@@ -9,7 +9,13 @@ type Props = {
 
 function FooterColumn({ index, data }: Props) {
   const columnItems = data.map((item, index) =>
-    index === 0 ? <h5 className="font-bold">{item}</h5> : <p>{item}</p>
+    index === 0 ? (
+      <h5 key={index} className="font-bold">
+        {item}
+      </h5>
+    ) : (
+      <p key={index}>{item}</p>
+    )
   );
 
   return (
