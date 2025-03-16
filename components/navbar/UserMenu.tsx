@@ -86,7 +86,7 @@ function UserMenu({ currentUser }: Props) {
                   onClick={() => router.push("/properties")}
                   label="My properties"
                 />
-                <MenuItem onClick={onRent} label="Airbnb your home" />
+                {/* <MenuItem onClick={onRent} label="Airbnb your home" /> */}
                 <hr />
                 <MenuItem onClick={() => signOut()} label="Logout" />
               </>
