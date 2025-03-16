@@ -5,7 +5,7 @@ import useRegisterModal from "@/hook/useRegisterModal";
 import axios from "axios";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
@@ -102,9 +102,9 @@ function RegisterModal({}: Props) {
       />
       <Button
         outline
-        label="Continue with Facebook"
-        icon={AiFillFacebook}
-        onClick={() => signIn("facebook")}
+        label="Continue with Github"
+        icon={AiFillGithub}
+        onClick={() => signIn("github")}
         isColor
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
