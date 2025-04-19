@@ -19,13 +19,13 @@ function ImageUpload({ onChange, value }: Props) {
     (result: any) => {
       onChange(result.info.secure_url);
     },
-    [onchange]
+    [onchange],
   );
 
   return (
     <CldUploadWidget
       onUpload={handleCallback}
-      uploadPreset="cptcecyi"
+      uploadPreset="wanderlust_upload"
       options={{
         maxFiles: 1,
       }}
